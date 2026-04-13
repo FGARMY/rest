@@ -1,16 +1,16 @@
 export const FOOD_EXPERIENCE = [
-  { id: 1, name: "Signature Tandoori Platter", desc: "Smoky, charred perfection straight from our traditional clay oven.", img: "https://images.unsplash.com/photo-1599487405705-8eb0c242e20b?auto=format&fit=crop&w=600&q=80" },
+  { id: 1, name: "Signature Tandoori Platter", desc: "Smoky, charred perfection straight from our traditional clay oven.", img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" }, // Smoking/Grill
   { id: 2, name: "Awadhi Dum Biryani", desc: "Aromatic basmati slow-cooked with tender cuts and secret spices.", img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=600&q=80" },
-  { id: 3, name: "Butter Chicken Classic", desc: "Rich, creamy tomato gravy paired perfectly with garlic naan.", img: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80" },
-  { id: 4, name: "Craft Cocktails", desc: "Expertly mixed libations to complement your dining experience.", img: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80" },
+  { id: 3, name: "Cheese Burst Naan & Curry", desc: "Our famous cheese-pull stuffed naan with rich butter gravy.", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" }, // Cheese pull
+  { id: 4, name: "Sizzling Appetizers", desc: "Hot off the pan, served with fresh mint chutney.", img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80" }, // Steam/Hot
 ];
 
 export const GALLERY_IMAGES = [
-  "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1574966739987-65e38f2cea46?auto=format&fit=crop&w=800&q=80", // Group dining
+  "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=800&q=80", // Barista action
+  "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80", // Vibe/People
+  "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80", // Close up vibrant food
+  "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80", // Pouring drink action
   "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80",
 ];
 

@@ -20,12 +20,20 @@ const FoodExperience = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {FOOD_EXPERIENCE.map((dish) => (
             <div key={dish.id} className="group cursor-pointer">
-              <div className="overflow-hidden mb-6 aspect-[4/5] bg-gray-100">
+              <div className="overflow-hidden mb-4 aspect-[4/5] bg-gray-100 relative rounded-lg shadow-sm">
                 <img 
                   src={dish.img} 
                   alt={dish.name} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
                 />
+                
+                {/* Conversion Badges */}
+                {dish.id === 1 && <div className="absolute top-3 left-3 bg-white/95 backdrop-blur text-brand-dark px-3 py-1.5 rounded-full text-[10px] font-black uppercase shadow-lg flex items-center gap-1">⭐ Most Ordered</div>}
+                {dish.id === 2 && <div className="absolute top-3 left-3 bg-brand-orange text-white px-3 py-1.5 rounded-full text-[10px] font-black uppercase shadow-lg flex items-center gap-1">👨‍🍳 Chef's Special</div>}
+                
+                <div className="absolute bottom-3 right-3 bg-brand-dark/90 backdrop-blur text-white px-2 py-1 rounded text-[9px] font-bold tracking-wider border border-white/20">
+                  {dish.id % 2 === 0 ? "Ready in 15 mins" : "Customer Favorite"}
+                </div>
               </div>
               <h3 className="text-2xl font-bold mb-2 text-brand-dark group-hover:text-brand-orange transition-colors">
                 {dish.name}

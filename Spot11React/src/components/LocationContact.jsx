@@ -40,12 +40,12 @@ const LocationContact = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 mt-8">
               <a href="https://maps.google.com/?q=Spot11+Enjoy+Dhanori" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 px-8 py-5 bg-brand-orange text-white font-bold tracking-wide text-base rounded hover:bg-brand-brown active:bg-brand-brown active:scale-95 transition-all shadow-md">
-                <Navigation size={20} /> Open in Google Maps
+                <Navigation size={20} /> 📍 Navigate Now
               </a>
               <a href="tel:+919876543210" className="flex items-center justify-center gap-3 px-8 py-5 border border-brand-dark text-brand-dark font-bold tracking-wide text-base rounded hover:bg-gray-50 active:bg-gray-100 active:scale-95 transition-all">
-                <Phone size={20} /> Call Now
+                <Phone size={20} /> 📞 Call Before You Visit
               </a>
             </div>
           </div>

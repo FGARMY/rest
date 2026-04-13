@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from './components/Hero';
+import TrustStrip from './components/TrustStrip';
 import QuickDecision from './components/QuickDecision';
+import GuidedFlow from './components/GuidedFlow';
 import About from './components/About';
 import SignatureDish from './components/SignatureDish';
 import CategoryStrip from './components/CategoryStrip';
@@ -11,6 +13,7 @@ import VideoReel from './components/VideoReel';
 import DrinksHighlight from './components/DrinksHighlight';
 import AmbianceGallery from './components/AmbianceGallery';
 import Reviews from './components/Reviews';
+import SignaturePunch from './components/SignaturePunch';
 import LocationContact from './components/LocationContact';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
@@ -41,7 +44,9 @@ function App() {
 
       <main>
         <Hero />
+        <TrustStrip />
         <QuickDecision />
+        <GuidedFlow />
         <About />
         <SignatureDish />
         <CategoryStrip />
@@ -52,6 +57,7 @@ function App() {
         <DrinksHighlight />
         <Reviews />
         <AmbianceGallery />
+        <SignaturePunch />
         <LocationContact />
         <FinalCTA />
       </main>

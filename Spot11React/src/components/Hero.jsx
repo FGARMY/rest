@@ -50,24 +50,38 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-brand-light/90 text-lg md:text-xl font-light mb-12 max-w-2xl"
+          className="text-brand-light/90 text-lg md:text-xl font-light mb-8 max-w-2xl"
         >
           A premium dining and bar experience in Dhanori, Pune.<br/>
           Where great food meets exceptional vibes.
         </motion.p>
 
-        {/* CTAs - Moved lower for thumb reachability on mobile */}
+        {/* Urgency Trigger */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mb-8 flex flex-col items-center gap-2"
+        >
+          <span className="bg-red-500/20 text-red-100 border border-red-500/50 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest flex items-center gap-2 shadow-sm">
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span> Open Now • Tables Filling Fast
+          </span>
+          <span className="text-white/60 text-[10px] uppercase font-bold tracking-widest">Avg. wait time: 10–15 mins</span>
+        </motion.div>
+
+        {/* CTAs - Thumb reachability on mobile */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-auto sm:mt-0 pb-12 sm:pb-0"
+          className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-auto sm:mt-0 pb-12 sm:pb-0"
         >
-          <button className="px-8 py-4 sm:py-4 bg-brand-orange hover:bg-brand-brown active:bg-brand-brown text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95 shadow-lg">
-            See What You'll Love
+          <button className="px-8 py-5 sm:py-4 bg-brand-orange hover:bg-brand-brown active:bg-brand-brown text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95 shadow-2xl relative overflow-hidden group">
+            <span className="relative z-10 block">Book Table in 2 Clicks</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] animate-[shimmer_2s_infinite]"></div>
           </button>
-          <button className="px-8 py-4 sm:py-4 bg-white/10 backdrop-blur-sm border border-white hover:bg-white active:bg-white hover:text-brand-dark active:text-brand-dark text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95">
-            Call Now
+          <button className="px-8 py-5 sm:py-4 bg-white/10 backdrop-blur-sm border border-white hover:bg-white active:bg-white hover:text-brand-dark active:text-brand-dark text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95">
+            Call for Instant Confirmation
           </button>
         </motion.div>
 

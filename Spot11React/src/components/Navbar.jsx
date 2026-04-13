@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       <div className={`font-serif font-bold text-xl md:text-2xl tracking-wide flex items-center transition-all duration-300 ${isScrolled ? 'scale-95' : 'scale-100'}`}>
-        SPOT<span className="text-brand-orange">11</span> ENJOY
+        SPOT<span className="text-yellow-400">11</span> ENJOY
       </div>
 
       {/* Desktop Links */}

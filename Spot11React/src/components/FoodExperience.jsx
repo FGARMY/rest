@@ -87,7 +87,7 @@ const FoodExperience = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:w-2/3 relative group overflow-hidden bg-brand-dark cursor-pointer flex flex-col justify-end min-h-[250px] md:min-h-[500px] rounded-sm"
+            className="lg:w-2/3 relative group overflow-hidden bg-brand-dark cursor-pointer flex flex-col justify-end min-h-[180px] md:min-h-[500px] rounded-sm"
           >
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-700 z-10"></div>
             <img 
@@ -115,7 +115,7 @@ const FoodExperience = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 * idx }}
-                className="group flex-1 relative overflow-hidden bg-brand-dark cursor-pointer flex flex-col justify-end min-h-[160px] md:min-h-[220px] rounded-sm"
+                className="group flex-1 relative overflow-hidden bg-brand-dark cursor-pointer flex flex-col justify-end min-h-[120px] md:min-h-[220px] rounded-sm"
               >
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
                 <img src={sig.img} alt={sig.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
@@ -149,7 +149,7 @@ const FoodExperience = () => {
             </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
           {FOOD_EXPERIENCE.map((dish, idx) => (
             <motion.div 
               key={dish.id} 
@@ -157,9 +157,9 @@ const FoodExperience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: idx * 0.1 }}
-              className="group cursor-pointer flex flex-col px-3 py-4 md:px-4 md:py-6 bg-white border border-gray-100 hover:border-brand-orange/20 transition-all shadow-sm hover:shadow-md"
+              className="group cursor-pointer flex flex-col px-2 py-3 md:px-4 md:py-6 bg-white border border-gray-100 hover:border-brand-orange/20 transition-all shadow-sm hover:shadow-md"
             >
-              <div className="overflow-hidden mb-3 md:mb-5 aspect-[4/5] bg-gray-200 relative">
+              <div className="overflow-hidden mb-2 md:mb-5 aspect-square md:aspect-[4/5] bg-gray-200 relative">
                 <img 
                   src={dish.img} 
                   alt={dish.name} 
@@ -175,13 +175,13 @@ const FoodExperience = () => {
               </div>
               
               <div className="flex flex-col flex-1 transform translate-y-0 group-hover:-translate-y-1 transition-transform duration-500">
-                <h3 className="text-sm md:text-xl font-serif font-bold text-brand-dark group-hover:text-brand-orange transition-colors mb-1 md:mb-2 line-clamp-1 md:line-clamp-none">
+                <h3 className="text-[11px] md:text-xl font-serif font-bold text-brand-dark group-hover:text-brand-orange transition-colors mb-0.5 md:mb-2 line-clamp-1">
                   {dish.name}
                 </h3>
-                <p className="hidden xs:block text-gray-500 font-light text-[10px] md:text-sm leading-relaxed mb-2 md:mb-4 line-clamp-2">
+                <p className="hidden md:block text-gray-500 font-light text-[10px] md:text-sm leading-relaxed mb-2 md:mb-4 line-clamp-2">
                   {dish.desc}
                 </p>
-                <span className="text-[8px] md:text-[10px] font-medium uppercase tracking-widest text-brand-brown mt-auto">
+                <span className="text-[7px] md:text-[10px] font-medium uppercase tracking-widest text-brand-brown mt-auto">
                     Classic
                 </span>
               </div>

@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Brand & Contact Info */}
           <div className="md:col-span-5 flex flex-col gap-6">
             <div className="font-serif font-bold text-3xl tracking-wide text-white mb-2">
-              SPOT<span className="text-brand-orange">11</span> ENJOY
+              SPOT<span className="text-yellow-400">11</span> ENJOY
             </div>
             <p className="font-light leading-relaxed text-sm">
               Where Every Visit Feels Worth It. A premium family restaurant and bar experience in the heart of Pune.

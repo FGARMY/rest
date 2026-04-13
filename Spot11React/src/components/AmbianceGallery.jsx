@@ -13,9 +13,9 @@ const AmbianceGallery = () => {
           </h2>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="columns-2 lg:columns-3 gap-3 md:gap-6 space-y-3 md:space-y-6">
           {GALLERY_IMAGES.map((img, idx) => (
-            <div key={idx} className="break-inside-avoid relative overflow-hidden group cursor-pointer">
+            <div key={idx} className="break-inside-avoid relative overflow-hidden group cursor-pointer rounded-sm">
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
               <img 
                 src={img} 

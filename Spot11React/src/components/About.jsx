@@ -27,16 +27,16 @@ const About = () => {
           </div>
 
           {/* Right Image */}
-          <div className="w-full lg:w-1/2">
-            <div className="relative">
+          <div className="w-full lg:w-1/2 mt-8 md:mt-0 px-4 md:px-0">
+            <div className="relative w-full max-w-[280px] sm:max-w-sm mx-auto lg:max-w-none">
               <div className="absolute -inset-4 border border-brand-orange/20 rounded-t-full hidden md:block"></div>
               <img 
                 src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" 
                 alt="Spot11 Interior" 
                 className="w-full h-auto rounded-t-full object-cover shadow-2xl relative z-10 aspect-[3/4]"
               />
-              <div className="absolute -bottom-8 -left-8 bg-white p-6 shadow-xl z-20 max-w-xs border border-gray-100">
-                <p className="font-serif italic text-lg text-brand-dark">
+              <div className="absolute -bottom-6 left-4 md:-bottom-8 md:-left-8 bg-white p-4 md:p-6 shadow-xl z-20 max-w-[240px] md:max-w-xs border border-gray-100">
+                <p className="font-serif italic text-sm md:text-lg text-brand-dark">
                   "The perfect blend of elegant dining and relaxed conversations."
                 </p>
               </div>

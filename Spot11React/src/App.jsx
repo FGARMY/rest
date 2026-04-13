@@ -1,14 +1,14 @@
 import React from 'react';
 import Hero from './components/Hero';
 import TrustStrip from './components/TrustStrip';
-import QuickDecision from './components/QuickDecision';
+
 import GuidedFlow from './components/GuidedFlow';
 import About from './components/About';
 import SignatureDish from './components/SignatureDish';
 import CategoryStrip from './components/CategoryStrip';
 import FoodExperience from './components/FoodExperience';
 import WhyChooseUs from './components/WhyChooseUs';
-import Occasions from './components/Occasions';
+
 import VideoReel from './components/VideoReel';
 import DrinksHighlight from './components/DrinksHighlight';
 import AmbianceGallery from './components/AmbianceGallery';
@@ -45,7 +45,7 @@ function App() {
       <main className="pb-24 md:pb-0">
         <Hero />
         <TrustStrip />
-        <QuickDecision />
+
         <VideoReel />
         <CategoryStrip />
         <FoodExperience />
@@ -54,7 +54,7 @@ function App() {
         <GuidedFlow />
         <DrinksHighlight />
         <Reviews />
-        <Occasions />
+
         <About />
         <WhyChooseUs />
         <SignaturePunch />

@@ -37,7 +37,7 @@ const DrinksHighlight = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           {BAR_ITEMS.map((item, idx) => (
             <motion.div 
               key={item.id}
@@ -47,17 +47,17 @@ const DrinksHighlight = () => {
               transition={{ duration: 0.6, delay: idx * 0.15 }}
               className="group"
             >
-              <div className="overflow-hidden mb-6 aspect-square rounded-sm">
+              <div className="overflow-hidden mb-3 md:mb-6 aspect-square rounded-sm">
                 <img 
                   src={item.img} 
                   alt={item.name} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out opacity-80 group-hover:opacity-100"
                 />
               </div>
-              <h3 className="text-2xl font-serif font-bold mb-2 text-white group-hover:text-brand-orange transition-colors">
+              <h3 className="text-lg sm:text-2xl font-serif font-bold mb-1 md:mb-2 text-white group-hover:text-brand-orange transition-colors">
                 {item.name}
               </h3>
-              <p className="text-gray-400 font-light leading-relaxed">
+              <p className="text-gray-400 font-light text-xs sm:text-base leading-relaxed line-clamp-2 md:line-clamp-none">
                 {item.desc}
               </p>
             </motion.div>

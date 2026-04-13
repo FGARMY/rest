@@ -6,7 +6,7 @@ export const FOOD_EXPERIENCE = [
 ];
 
 export const GALLERY_IMAGES = [
-  "https://images.unsplash.com/photo-1574966739987-65e38f2cea46?auto=format&fit=crop&w=800&q=80", // Group dining
+  "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80", // Group dining
   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=800&q=80", // Barista action
   "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80", // Vibe/People
   "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80", // Close up vibrant food
@@ -21,9 +21,9 @@ export const REVIEWS = [
 ];
 
 export const BAR_ITEMS = [
-  { id: 1, name: "Craft Beers", desc: "Local and imported brews perfectly chilled for the weekend.", img: "https://images.unsplash.com/photo-1542687226-ac49cccf64de?auto=format&fit=crop&w=600&q=80" },
+  { id: 1, name: "Craft Beers", desc: "Local and imported brews perfectly chilled for the weekend.", img: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=600&q=80" },
   { id: 2, name: "Signature Cocktails", desc: "Expertly mixed by our master bartenders using premium spirits.", img: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80" },
-  { id: 3, name: "Premium Spirits", desc: "A curated collection of whiskey, gin, and fine wines.", img: "https://images.unsplash.com/photo-1574624796336-39ce360e527d?auto=format&fit=crop&w=600&q=80" }
+  { id: 3, name: "Premium Spirits", desc: "A curated collection of whiskey, gin, and fine wines.", img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" }
 ];
 
 export const OCCASIONS = [

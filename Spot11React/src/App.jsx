@@ -46,17 +46,17 @@ function App() {
         <Hero />
         <TrustStrip />
         <QuickDecision />
-        <GuidedFlow />
-        <About />
-        <SignatureDish />
+        <VideoReel />
         <CategoryStrip />
         <FoodExperience />
-        <VideoReel />
-        <WhyChooseUs />
-        <Occasions />
+        <SignatureDish />
+        <AmbianceGallery />
+        <GuidedFlow />
         <DrinksHighlight />
         <Reviews />
-        <AmbianceGallery />
+        <Occasions />
+        <About />
+        <WhyChooseUs />
         <SignaturePunch />
         <LocationContact />
         <FinalCTA />

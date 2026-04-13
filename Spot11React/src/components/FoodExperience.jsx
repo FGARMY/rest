@@ -1,53 +1,112 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FOOD_EXPERIENCE } from '../data/mockData';
 
 const FoodExperience = () => {
   return (
-    <section id="food" className="py-12 md:py-24 bg-white">
+    <section id="food" className="py-16 md:py-32 bg-[#FDFBF7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h4 className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-3">Our Menu</h4>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-dark">
-            Food That Feels Like Home — <br/>
-            <span className="italic text-brand-brown font-normal">But Better.</span>
-          </h2>
-          <p className="text-gray-600 font-light text-lg">
-            From smoky North Indian kebabs to slow-cooked Awadhi biryanis, our kitchen uses authentic spices and techniques to craft dishes that satisfy the soul.
-          </p>
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
+          <div className="max-w-2xl">
+            <motion.h4 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+              className="text-brand-orange uppercase tracking-[0.3em] text-xs font-bold mb-4"
+            >
+              Culinary Art
+            </motion.h4>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-brand-dark leading-tight"
+            >
+              Food that feels like home, <br className="hidden md:block"/>
+              <span className="italic font-normal text-brand-brown">but better.</span>
+            </motion.h2>
+          </div>
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="hidden md:block"
+          >
+            <button className="group relative px-6 py-3 overflow-hidden rounded bg-brand-dark text-brand-light font-medium tracking-widest text-xs uppercase transition-all duration-300 hover:bg-brand-brown">
+              <span className="relative z-10 flex items-center gap-2">
+                Explore Full Menu <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </span>
+            </button>
+          </motion.div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-          {FOOD_EXPERIENCE.map((dish) => (
-            <div key={dish.id} className="group cursor-pointer">
-              <div className="overflow-hidden mb-3 md:mb-4 aspect-[4/5] bg-gray-100 relative rounded-lg shadow-sm">
+        {/* Menu Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
+          {FOOD_EXPERIENCE.map((dish, idx) => (
+            <motion.div 
+              key={dish.id} 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.8, delay: idx * 0.15 }}
+              className="group cursor-pointer flex flex-col"
+            >
+              <div className="overflow-hidden mb-6 aspect-[4/5] bg-gray-200 relative shadow-sm">
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-700 z-10 pointer-events-none"></div>
                 <img 
                   src={dish.img} 
                   alt={dish.name} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)]"
                 />
                 
-                {/* Conversion Badges */}
-                {dish.id === 1 && <div className="absolute top-2 left-2 md:top-3 md:left-3 bg-white/95 backdrop-blur text-brand-dark px-2 py-1 md:px-3 md:py-1.5 rounded-full text-[8px] md:text-[10px] font-black uppercase shadow-lg flex items-center gap-1">⭐ Most Ordered</div>}
-                {dish.id === 2 && <div className="absolute top-2 left-2 md:top-3 md:left-3 bg-brand-orange text-white px-2 py-1 md:px-3 md:py-1.5 rounded-full text-[8px] md:text-[10px] font-black uppercase shadow-lg flex items-center gap-1">👨‍🍳 Chef's Special</div>}
-                
-                <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 bg-brand-dark/90 backdrop-blur text-white px-2 py-1 rounded text-[8px] md:text-[9px] font-bold tracking-wider border border-white/20">
-                  {dish.id % 2 === 0 ? "Ready in 15 mins" : "Customer Favorite"}
+                {/* Refined Conversion Badges */}
+                <div className="absolute top-4 left-4 z-20 flex flex-col gap-2">
+                  {dish.id === 1 && (
+                    <div className="bg-white/90 backdrop-blur-md text-brand-dark px-3 py-1.5 text-[9px] font-bold uppercase tracking-widest shadow-sm border border-white/50">
+                      Most Ordered
+                    </div>
+                  )}
+                  {dish.id === 2 && (
+                    <div className="bg-brand-dark/90 backdrop-blur-md text-brand-light px-3 py-1.5 text-[9px] font-bold uppercase tracking-widest shadow-sm">
+                      Chef's Special
+                    </div>
+                  )}
                 </div>
               </div>
-              <h3 className="text-base sm:text-xl md:text-2xl font-bold mb-1 md:mb-2 text-brand-dark group-hover:text-brand-orange transition-colors">
-                {dish.name}
-              </h3>
-              <p className="text-gray-500 font-light text-xs md:text-base leading-relaxed line-clamp-2 md:line-clamp-none">
-                {dish.desc}
-              </p>
-            </div>
+              
+              <div className="flex flex-col flex-1 transform translate-y-0 group-hover:-translate-y-2 transition-transform duration-500">
+                <div className="flex justify-between items-start gap-4 mb-2">
+                  <h3 className="text-xl md:text-2xl font-serif font-bold text-brand-dark group-hover:text-brand-orange transition-colors">
+                    {dish.name}
+                  </h3>
+                </div>
+                <div className="w-8 h-[1px] bg-brand-orange/50 mb-4 group-hover:w-16 transition-all duration-500"></div>
+                <p className="text-gray-500 font-light text-sm md:text-base leading-relaxed mb-4">
+                  {dish.desc}
+                </p>
+                
+                <div className="mt-auto pt-4 flex items-center justify-between border-t border-gray-200/60">
+                  <span className="text-[10px] font-medium uppercase tracking-widest text-brand-brown">
+                    {dish.id % 2 === 0 ? "Ready in 15 mins" : "Customer Favorite"}
+                  </span>
+                  <span className="text-brand-dark text-sm opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300">
+                    →
+                  </span>
+                </div>
+              </div>
+            </motion.div>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <button className="px-8 py-3 border border-brand-dark hover:bg-brand-dark hover:text-white transition-colors duration-300 font-medium tracking-wide text-sm uppercase">
-            Explore Full Menu
+        {/* Mobile Full Menu Button */}
+        <div className="mt-12 text-center md:hidden">
+          <button className="w-full relative px-6 py-4 overflow-hidden bg-brand-dark text-brand-light font-medium tracking-widest text-xs uppercase transition-all duration-300">
+            Explore Full Menu →
           </button>
         </div>
 

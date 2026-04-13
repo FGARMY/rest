@@ -13,12 +13,12 @@ const VideoReel = () => {
         </h2>
       </div>
 
-      <div className="relative w-full max-w-6xl mx-auto flex items-center justify-center h-[550px] md:h-[650px] overflow-hidden lg:overflow-visible">
+      <div className="relative w-full max-w-6xl mx-auto flex items-center justify-center h-[480px] sm:h-[550px] md:h-[650px] overflow-hidden lg:overflow-visible">
         
-        {/* Previous Reel Skeleton (Left) */}
-        <div className="absolute -left-[40%] md:left-2 lg:left-[10%] w-[320px] md:w-[360px] aspect-[9/16] rounded-[2rem] opacity-40 sm:opacity-60 blur-[1px] scale-95 origin-right transition-all flex flex-col justify-end p-2 border-2 border-brand-orange/20 z-0">
+        {/* Previous Reel Skeleton (Left) - Hidden on mobile for focus */}
+        <div className="hidden sm:flex absolute -left-[40%] md:left-2 lg:left-[10%] w-[320px] md:w-[360px] aspect-[9/16] rounded-[2rem] opacity-40 sm:opacity-60 blur-[1px] scale-95 origin-right transition-all flex-col justify-end p-2 border-2 border-brand-orange/20 z-0">
           <div className="w-full h-full rounded-2xl overflow-hidden relative grayscale select-none pointer-events-none">
-            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80" alt="Previous Reel" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Previous Reel" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/40"></div>
             <div className="absolute bottom-6 left-4 right-8 space-y-3">
               <div className="w-10 h-10 rounded-full bg-white/20"></div>
@@ -28,10 +28,10 @@ const VideoReel = () => {
           </div>
         </div>
 
-        {/* Next Reel Skeleton (Right) */}
-        <div className="absolute -right-[40%] md:right-2 lg:right-[10%] w-[320px] md:w-[360px] aspect-[9/16] rounded-[2rem] opacity-40 sm:opacity-60 blur-[1px] scale-95 origin-left transition-all flex flex-col justify-end p-2 border-2 border-brand-orange/20 z-0">
+        {/* Next Reel Skeleton (Right) - Hidden on mobile for focus */}
+        <div className="hidden sm:flex absolute -right-[40%] md:right-2 lg:right-[10%] w-[320px] md:w-[360px] aspect-[9/16] rounded-[2rem] opacity-40 sm:opacity-60 blur-[1px] scale-95 origin-left transition-all flex-col justify-end p-2 border-2 border-brand-orange/20 z-0">
           <div className="w-full h-full rounded-2xl overflow-hidden relative grayscale select-none pointer-events-none">
-            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=400&q=80" alt="Next Reel" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Next Reel" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/40"></div>
             <div className="absolute bottom-6 left-4 right-8 space-y-3">
               <div className="w-10 h-10 rounded-full bg-white/20"></div>
@@ -55,7 +55,7 @@ const VideoReel = () => {
             muted 
             playsInline
             loading="lazy"
-            poster="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+            poster="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80"
             className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
           >
             <source src="https://cdn.pixabay.com/video/2020/03/12/33580-398284591_large.mp4" type="video/mp4" />

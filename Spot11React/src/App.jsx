@@ -2,19 +2,19 @@ import React from 'react';
 import Hero from './components/Hero';
 import TrustStrip from './components/TrustStrip';
 
-import GuidedFlow from './components/GuidedFlow';
+
 import About from './components/About';
 import SignatureDish from './components/SignatureDish';
 import CategoryStrip from './components/CategoryStrip';
 import FoodExperience from './components/FoodExperience';
-import WhyChooseUs from './components/WhyChooseUs';
+
 
 import VideoReel from './components/VideoReel';
 import DrinksHighlight from './components/DrinksHighlight';
 import AmbianceGallery from './components/AmbianceGallery';
 import Reviews from './components/Reviews';
 import SignaturePunch from './components/SignaturePunch';
-import LocationContact from './components/LocationContact';
+
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import StickyMobileNav from './components/StickyMobileNav';
@@ -51,14 +51,14 @@ function App() {
         <FoodExperience />
         <SignatureDish />
         <AmbianceGallery />
-        <GuidedFlow />
+
         <DrinksHighlight />
+        <SignaturePunch />
         <Reviews />
 
         <About />
-        <WhyChooseUs />
-        <SignaturePunch />
-        <LocationContact />
+
+
         <FinalCTA />
       </main>
 

@@ -16,10 +16,10 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-gray-600 font-light text-lg leading-relaxed">
               <p>
-                Spot11 Enjoy was created with a simple vision: to offer a space where comfort meets culinary excellence. Whether you're here for a family dinner, catching up with friends, or enjoying a quiet evening at the bar, our ambience is designed to make you feel right at home.
+                Born from a love for late nights and legendary cravings. Spot11 was created with one goal: to be the kind of place we wanted to go to. A space where the comfort of home meets the electric vibe of the city.
               </p>
               <p>
-                We believe that dining out is about more than just food; it's about the memories made around the table. That's why every detail, from our lighting to our playlists, is curated for your perfect evening.
+                We don't just serve plates; we set the pace. Whether it's a quiet midweek catch-up or a weekend celebration, we curate every detail—from the playlist to the lighting—to ensure your best memories always have a seat at our table.
               </p>
             </div>
             <div className="mt-10">

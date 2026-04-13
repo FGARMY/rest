@@ -16,8 +16,8 @@ const FinalCTA = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 text-brand-light leading-tight font-serif">
-          Good Food. Great Vibes. <br className="md:hidden" />
-          <span className="italic text-brand-orange font-normal">Waiting for You.</span>
+          Legendary Cravings. <br className="md:hidden" />
+          <span className="italic text-brand-orange font-normal">Legendary Nights.</span>
         </h2>
         
         <div className="flex justify-center mt-12 w-full sm:w-auto">

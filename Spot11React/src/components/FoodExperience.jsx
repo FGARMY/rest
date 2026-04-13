@@ -45,7 +45,7 @@ const FoodExperience = () => {
             transition={{ duration: 0.8 }}
             className="text-gray-500 font-light text-lg"
           >
-            A premium dining and bar space in Dhanori, PUNE. Where great food meets exceptional vibes for the perfect outing.
+            Good food, better company, and vibes that refuse to quit. Pune's favorite corner to unwind and feast.
           </motion.p>
         </div>
 

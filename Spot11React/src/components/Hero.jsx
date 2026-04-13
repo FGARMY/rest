@@ -42,7 +42,8 @@ const Hero = () => {
           className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4"
         >
           Where Great Food <br className="md:hidden" />
-          <span className="italic text-brand-cream">Meets Great Vibes</span>
+          Elevated Flavors, <br className="md:hidden" />
+          <span className="italic text-brand-cream">Unforgettable Moments</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -52,8 +53,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-brand-light/90 text-lg md:text-xl font-light mb-4 max-w-2xl"
         >
-          A premium dining and bar experience in Dhanori, Pune.<br />
-          Where great food meets exceptional vibes.
+          Where culinary artistry meets a vibrant atmosphere. <br />
+          Crafting memories, one plate at a time.
         </motion.p>
 
         {/* Urgency Trigger */}
@@ -82,14 +83,13 @@ const Hero = () => {
           </button>
         </motion.div>
 
-        {/* Loved by locals */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="mt-12 mb-24 text-white/60 text-sm font-light italic"
+          className="mt-12 mb-24 text-white/60 text-sm font-light tracking-[0.2em] uppercase"
         >
-          Loved by locals in Pune
+          Dhanori’s Favorite Neighborhood Escape
         </motion.div>
 
         {/* Scroll Indicator */}

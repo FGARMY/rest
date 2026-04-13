@@ -33,7 +33,7 @@ const DrinksHighlight = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-gray-400 font-light text-lg"
           >
-            Craft cocktails, premium spirits, and cold pints. Let it flow.
+            Where the ice is cold, the spirits are premium, and the stories are long.
           </motion.p>
         </div>
 

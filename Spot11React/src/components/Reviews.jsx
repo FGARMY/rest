@@ -5,10 +5,10 @@ import { REVIEWS } from '../data/mockData';
 
 const Reviews = () => {
   return (
-    <section className="py-12 md:py-16 bg-gray-50">
+    <section className="py-8 md:py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-10">
           <div className="max-w-xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-2 text-brand-dark">
               Google <span className="font-normal text-brand-brown">Reviews</span>

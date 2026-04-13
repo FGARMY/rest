@@ -12,11 +12,11 @@ const iconMap = {
 
 const FoodExperience = () => {
   return (
-    <section id="food" className="py-12 md:py-16 bg-[#FDFBF7]">
+    <section id="food" className="py-8 md:py-16 bg-[#FDFBF7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* SECTION 1: THE EXPERIENCE (Why Choose Us) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-end mb-12 gap-8">
+        {/* SECTION 1: THE EXPERIENCE (Why Choose Us) - HIDDEN ON MOBILE */}
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 justify-between items-end mb-12 gap-8">
           <div className="max-w-2xl">
             <motion.h4 
               initial={{ opacity: 0, y: 20 }}
@@ -49,8 +49,8 @@ const FoodExperience = () => {
           </motion.p>
         </div>
 
-        {/* USPS Strip */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20 md:mb-32">
+        {/* USPS Strip - HIDDEN ON MOBILE */}
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20 md:mb-32">
           {USPS.map((usp, idx) => {
             const Icon = iconMap[usp.icon];
             return (
@@ -75,19 +75,19 @@ const FoodExperience = () => {
         </div>
 
         {/* SECTION 2: THE SIGNATURES (Must Try) */}
-        <div className="mb-12">
+        <div className="mb-8 md:mb-12">
             <h4 className="text-brand-dark uppercase tracking-widest text-[10px] font-bold mb-2 opacity-50">Chef's Recommendations</h4>
             <h3 className="text-3xl md:text-4xl font-serif font-bold text-brand-dark">The <span className="italic text-brand-brown font-normal ml-1">Signatures</span></h3>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-5 items-stretch mb-20 md:mb-32">
+        <div className="flex flex-col lg:flex-row gap-5 items-stretch mb-12 md:mb-32">
           {/* Main Featured */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:w-2/3 relative group overflow-hidden bg-brand-dark cursor-pointer flex flex-col justify-end min-h-[350px] md:min-h-[500px] rounded-sm"
+            className="lg:w-2/3 relative group overflow-hidden bg-brand-dark cursor-pointer flex flex-col justify-end min-h-[250px] md:min-h-[500px] rounded-sm"
           >
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-700 z-10"></div>
             <img 
@@ -95,16 +95,16 @@ const FoodExperience = () => {
               alt="Spot11 Butter Chicken" 
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]"
             />
-            <div className="relative z-20 w-full bg-gradient-to-t from-black via-black/60 to-transparent p-6 md:p-12">
-              <div className="text-brand-orange uppercase tracking-widest text-[10px] md:text-xs font-bold mb-2">Most Ordered Classic</div>
-              <h3 className="text-2xl md:text-5xl font-serif text-white font-bold mb-3">Spot11 Butter Chicken</h3>
-              <p className="text-white/80 font-light text-xs md:text-lg mb-4">Tender boneless chicken in velvety tomato & cashew gravy. Finished with fresh cream.</p>
-              <span className="text-brand-orange text-xs font-bold tracking-widest uppercase border-b border-brand-orange/40 pb-1">Taste the Legend →</span>
+            <div className="relative z-20 w-full bg-gradient-to-t from-black via-black/60 to-transparent p-5 md:p-12">
+              <div className="text-brand-orange uppercase tracking-widest text-[10px] md:text-xs font-bold mb-1 md:mb-2">Most Ordered Classic</div>
+              <h3 className="text-xl md:text-5xl font-serif text-white font-bold mb-2 md:mb-3">Spot11 Butter Chicken</h3>
+              <p className="text-white/80 font-light text-[10px] md:text-lg mb-3 md:mb-4 max-w-sm">Tender boneless chicken in velvety tomato & cashew gravy. Finished with fresh cream.</p>
+              <span className="text-brand-orange text-[9px] md:text-xs font-bold tracking-widest uppercase border-b border-brand-orange/40 pb-1">Taste the Legend →</span>
             </div>
           </motion.div>
 
           {/* Secondary Signatures */}
-          <div className="lg:w-1/3 flex flex-col gap-5">
+          <div className="lg:w-1/3 flex flex-col gap-3 md:gap-5">
             {[
               { id: 1, title: "Tandoori Platter", img: "https://images.unsplash.com/photo-1599487405705-8eb0c242e20b?auto=format&fit=crop&w=600&q=80", tag: "Smoky" },
               { id: 2, title: "Awadhi Biryani", img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=600&q=80", tag: "Slow-Cooked" }
@@ -115,13 +115,13 @@ const FoodExperience = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 * idx }}
-                className="group flex-1 relative overflow-hidden bg-brand-dark cursor-pointer flex flex-col justify-end min-h-[220px] rounded-sm"
+                className="group flex-1 relative overflow-hidden bg-brand-dark cursor-pointer flex flex-col justify-end min-h-[160px] md:min-h-[220px] rounded-sm"
               >
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
                 <img src={sig.img} alt={sig.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-                <div className="relative z-20 p-6">
-                  <div className="text-brand-orange text-[9px] font-bold uppercase tracking-widest mb-1">{sig.tag}</div>
-                  <h3 className="text-xl md:text-2xl font-serif text-white font-bold">{sig.title}</h3>
+                <div className="relative z-20 p-4 md:p-6">
+                  <div className="text-brand-orange text-[8px] md:text-[9px] font-bold uppercase tracking-widest mb-1">{sig.tag}</div>
+                  <h3 className="text-lg md:text-2xl font-serif text-white font-bold">{sig.title}</h3>
                 </div>
               </motion.div>
             ))}
@@ -129,7 +129,7 @@ const FoodExperience = () => {
         </div>
 
         {/* SECTION 3: THE MENU PREVIEW */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-6 mb-8 md:mb-12">
             <h3 className="text-2xl md:text-3xl font-serif font-bold text-brand-dark">Full <span className="italic text-brand-brown font-normal ml-1">Menu Preview</span></h3>
             
             {/* Integrated Category Explorer */}
@@ -137,7 +137,7 @@ const FoodExperience = () => {
                 {["All Menus", "Signature Biryanis", "Tandoori Starters", "Pizzas & Pastas", "Beverages & Bar", "Desserts"].map((cat, idx) => (
                     <button 
                         key={idx}
-                        className={`whitespace-nowrap px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all duration-300 ${
+                        className={`whitespace-nowrap px-4 py-2 rounded-full text-[9px] md:text-[10px] font-bold uppercase tracking-widest transition-all duration-300 ${
                             idx === 0 
                             ? 'bg-brand-dark text-white' 
                             : 'bg-white/50 text-brand-dark/60 hover:text-brand-dark border border-brand-dark/10'
@@ -149,25 +149,25 @@ const FoodExperience = () => {
             </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-5">
           {FOOD_EXPERIENCE.map((dish, idx) => (
             <motion.div 
               key={dish.id} 
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.8, delay: idx * 0.15 }}
-              className="group cursor-pointer flex flex-col px-4 py-6 bg-white border border-gray-100 hover:border-brand-orange/20 transition-all shadow-sm hover:shadow-md"
+              transition={{ duration: 0.8, delay: idx * 0.1 }}
+              className="group cursor-pointer flex flex-col px-3 py-4 md:px-4 md:py-6 bg-white border border-gray-100 hover:border-brand-orange/20 transition-all shadow-sm hover:shadow-md"
             >
-              <div className="overflow-hidden mb-5 aspect-[4/5] bg-gray-200 relative">
+              <div className="overflow-hidden mb-3 md:mb-5 aspect-[4/5] bg-gray-200 relative">
                 <img 
                   src={dish.img} 
                   alt={dish.name} 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)]"
                 />
-                <div className="absolute top-2 left-2 z-20">
+                <div className="absolute top-1 left-1 md:top-2 md:left-2 z-20">
                   {dish.id === 1 && (
-                    <div className="bg-brand-orange text-white px-2 py-1 text-[8px] font-bold uppercase tracking-widest shadow-sm">
+                    <div className="bg-brand-orange text-white px-1.5 py-0.5 md:px-2 md:py-1 text-[7px] md:text-[8px] font-bold uppercase tracking-widest shadow-sm">
                       Best Seller
                     </div>
                   )}
@@ -175,14 +175,14 @@ const FoodExperience = () => {
               </div>
               
               <div className="flex flex-col flex-1 transform translate-y-0 group-hover:-translate-y-1 transition-transform duration-500">
-                <h3 className="text-lg md:text-xl font-serif font-bold text-brand-dark group-hover:text-brand-orange transition-colors mb-2">
+                <h3 className="text-sm md:text-xl font-serif font-bold text-brand-dark group-hover:text-brand-orange transition-colors mb-1 md:mb-2 line-clamp-1 md:line-clamp-none">
                   {dish.name}
                 </h3>
-                <p className="text-gray-500 font-light text-xs sm:text-sm leading-relaxed mb-4 line-clamp-2">
+                <p className="hidden xs:block text-gray-500 font-light text-[10px] md:text-sm leading-relaxed mb-2 md:mb-4 line-clamp-2">
                   {dish.desc}
                 </p>
-                <span className="text-[10px] font-medium uppercase tracking-widest text-brand-brown mt-auto">
-                    Classic Preparation
+                <span className="text-[8px] md:text-[10px] font-medium uppercase tracking-widest text-brand-brown mt-auto">
+                    Classic
                 </span>
               </div>
             </motion.div>
@@ -190,7 +190,7 @@ const FoodExperience = () => {
         </div>
 
         {/* Directional Cue */}
-        <div className="mt-16 text-center">
+        <div className="mt-12 md:mt-16 text-center">
             <div className="inline-flex flex-col items-center gap-2">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-brand-dark/40">Next: Step into our Space</span>
                 <motion.span 

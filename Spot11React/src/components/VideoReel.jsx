@@ -4,16 +4,16 @@ import { Heart, MessageCircle, Send, Bookmark, Music } from 'lucide-react';
 
 const VideoReel = () => {
   return (
-    <section className="py-12 md:py-16 bg-[#FFFCF6] flex flex-col items-center justify-center">
+    <section className="py-8 md:py-16 bg-[#FFFCF6] flex flex-col items-center justify-center">
       
-      <div className="text-center max-w-xl mx-auto mb-12 px-4">
+      <div className="text-center max-w-xl mx-auto mb-10 md:mb-12 px-4">
         <h4 className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-2">Watch it Live</h4>
         <h2 className="text-4xl md:text-5xl font-bold text-brand-dark">
           Experience <span className="italic font-normal text-brand-brown">the Vibe</span>
         </h2>
       </div>
 
-      <div className="relative w-full max-w-6xl mx-auto flex items-center justify-center h-[480px] sm:h-[550px] md:h-[650px] overflow-hidden lg:overflow-visible">
+      <div className="relative w-full max-w-6xl mx-auto flex items-center justify-center h-[350px] sm:h-[550px] md:h-[650px] overflow-hidden lg:overflow-visible">
         
         {/* Previous Reel Skeleton (Left) - Hidden on mobile for focus */}
         <div className="hidden sm:flex absolute -left-[40%] md:left-2 lg:left-[10%] w-[320px] md:w-[360px] aspect-[9/16] rounded-[2rem] opacity-40 sm:opacity-60 blur-[1px] scale-95 origin-right transition-all flex-col justify-end p-2 border-2 border-brand-orange/20 z-0">

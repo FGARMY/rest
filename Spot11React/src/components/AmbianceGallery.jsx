@@ -4,17 +4,17 @@ import { GALLERY_IMAGES } from '../data/mockData';
 
 const AmbianceGallery = () => {
   return (
-    <section id="ambiance" className="py-12 md:py-16 bg-brand-light">
+    <section id="ambiance" className="py-6 md:py-16 bg-brand-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
           <h4 className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-3">Our Ambiance</h4>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-dark leading-tight">
             Designed for <span className="italic text-brand-brown font-normal">Memorable Evenings.</span>
           </h2>
         </div>
 
-        <div className="columns-2 lg:columns-3 gap-4 md:gap-5 space-y-4 md:space-y-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5">
           {GALLERY_IMAGES.map((img, idx) => (
             <div key={idx} className="break-inside-avoid relative overflow-hidden group cursor-pointer rounded-sm">
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>

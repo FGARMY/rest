@@ -4,7 +4,7 @@ import heroBg from '../assets/Dineimage.avif';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[100svh] pt-28 pb-20 md:py-0 md:min-h-screen flex items-center justify-center overflow-hidden bg-brand-dark">
+    <section id="hero" className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-brand-dark">
 
       {/* Background Image */}
       <motion.div
@@ -97,17 +97,18 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
-          className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
         >
-          <span className="text-white/40 text-[10px] uppercase font-bold tracking-[0.3em]">Scroll to explore</span>
+          <span className="text-white/40 text-[9px] uppercase font-bold tracking-[0.3em]">Scroll to explore</span>
           <motion.span
-            animate={{ y: [0, 8, 0] }}
+            animate={{ y: [0, 5, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            className="text-brand-orange text-xl"
+            className="text-brand-orange text-lg"
           >
             ↓
           </motion.span>
         </motion.div>
+
 
 
       </div>

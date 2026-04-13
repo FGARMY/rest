@@ -3,17 +3,22 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="relative h-[100svh] min-h-[600px] w-full flex items-center justify-center overflow-hidden">
+    <section className="relative h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-brand-dark">
       
-      {/* Background Image Layer */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Image */}
+      <motion.div 
+        initial={{ scale: 1.1, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.2 }}
+        className="absolute inset-0 z-0"
+      >
         <img 
           src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" 
-          alt="Restaurant Ambiance" 
-          className="w-full h-full object-cover"
+          alt="Spot11 Enjoy Premium Ambiance" 
+          className="w-full h-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-black/50"></div>
-      </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent"></div>
+      </motion.div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
         
@@ -41,26 +46,27 @@ const Hero = () => {
 
         {/* Subheadline */}
         <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="text-lg md:text-xl text-white/90 font-light mb-10 max-w-2xl"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-brand-light/90 text-lg md:text-xl font-light mb-12 max-w-2xl"
         >
-          An elevated yet comfortable dining experience right here in Dhanori. Gather around the table and let us pour the drinks.
+          A premium dining and bar experience in Dhanori, Pune.<br/>
+          Where great food meets exceptional vibes.
         </motion.p>
 
-        {/* CTAs */}
+        {/* CTAs - Moved lower for thumb reachability on mobile */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+          className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-auto sm:mt-0 pb-12 sm:pb-0"
         >
-          <button className="px-8 py-4 bg-brand-orange hover:bg-brand-brown text-white text-sm font-semibold uppercase tracking-wider rounded transition-all duration-300 w-full sm:w-auto shadow-soft hover:shadow-lg">
-            Book Your Spot Now
-          </button>
-          <button className="px-8 py-4 bg-transparent border border-white hover:bg-white hover:text-brand-dark text-white text-sm font-semibold uppercase tracking-wider rounded transition-all duration-300 w-full sm:w-auto">
+          <button className="px-8 py-4 sm:py-4 bg-brand-orange hover:bg-brand-brown active:bg-brand-brown text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95 shadow-lg">
             See What You'll Love
+          </button>
+          <button className="px-8 py-4 sm:py-4 bg-white/10 backdrop-blur-sm border border-white hover:bg-white active:bg-white hover:text-brand-dark active:text-brand-dark text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95">
+            Call Now
           </button>
         </motion.div>
 

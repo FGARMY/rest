@@ -43,12 +43,14 @@ const SignatureDish = () => {
               alt="Spot11 Butter Chicken" 
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]"
             />
-            <div className="relative z-20 w-full bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent p-8 md:p-12">
-              <div className="text-brand-orange uppercase tracking-widest text-xs font-bold mb-2">Signature Classic</div>
-              <h3 className="text-3xl md:text-5xl font-serif text-white font-bold mb-4">Spot11 Butter Chicken</h3>
-              <p className="text-white/80 font-light max-w-lg text-lg">
-                Our crowning jewel. Tender boneless chicken simmered overnight in a rich, velvety tomato and cashew gravy, finished with fenugreek and a dollop of fresh cream.
-              </p>
+            <div className="relative z-20 w-full bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent p-6 md:p-12">
+              <div className="text-brand-orange uppercase tracking-widest text-[10px] md:text-xs font-bold mb-2">Signature Classic</div>
+              <h3 className="text-3xl md:text-5xl font-serif text-white font-bold mb-3">Spot11 Butter Chicken</h3>
+              <ul className="text-white/80 font-light text-sm md:text-lg space-y-1">
+                <li>• Tender boneless chicken</li>
+                <li>• Velvety tomato & cashew gravy</li>
+                <li>• Finished with fenugreek & fresh cream</li>
+              </ul>
             </div>
           </motion.div>
 

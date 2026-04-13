@@ -1,7 +1,9 @@
 import React from 'react';
 import Hero from './components/Hero';
+import QuickDecision from './components/QuickDecision';
 import About from './components/About';
 import SignatureDish from './components/SignatureDish';
+import CategoryStrip from './components/CategoryStrip';
 import FoodExperience from './components/FoodExperience';
 import WhyChooseUs from './components/WhyChooseUs';
 import Occasions from './components/Occasions';
@@ -39,12 +41,14 @@ function App() {
 
       <main>
         <Hero />
+        <QuickDecision />
         <About />
         <SignatureDish />
+        <CategoryStrip />
         <FoodExperience />
+        <VideoReel />
         <WhyChooseUs />
         <Occasions />
-        <VideoReel />
         <DrinksHighlight />
         <Reviews />
         <AmbianceGallery />

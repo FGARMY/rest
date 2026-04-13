@@ -40,21 +40,21 @@ const LocationContact = () => {
               </div>
             </div>
 
-            <div className="flex sm:flex-row flex-col gap-4">
-              <button className="flex items-center justify-center gap-2 px-8 py-3 bg-brand-dark text-white font-medium tracking-wide text-sm uppercase hover:bg-brand-orange transition-colors duration-300">
-                <Phone size={16} /> Call Now
-              </button>
-              <button className="flex items-center justify-center gap-2 px-8 py-3 border border-brand-dark text-brand-dark font-medium tracking-wide text-sm uppercase hover:bg-brand-light transition-colors duration-300">
-                <Navigation size={16} /> Get Directions
-              </button>
+            <div className="flex flex-col gap-4">
+              <a href="https://maps.google.com/?q=Spot11+Enjoy+Dhanori" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 px-8 py-5 bg-brand-orange text-white font-bold tracking-wide text-base rounded hover:bg-brand-brown active:bg-brand-brown active:scale-95 transition-all shadow-md">
+                <Navigation size={20} /> Open in Google Maps
+              </a>
+              <a href="tel:+919876543210" className="flex items-center justify-center gap-3 px-8 py-5 border border-brand-dark text-brand-dark font-bold tracking-wide text-base rounded hover:bg-gray-50 active:bg-gray-100 active:scale-95 transition-all">
+                <Phone size={20} /> Call Now
+              </a>
             </div>
           </div>
 
           {/* Map */}
-          <div className="h-[400px] lg:h-[500px] w-full bg-gray-100 relative">
+          <div className="h-[300px] md:h-[400px] lg:h-[500px] w-full bg-gray-100 relative rounded-lg overflow-hidden shadow-sm">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15128.219973278278!2d73.8828859!3d18.5714392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13fa0bbba83%3A0xb3fcba9198305c4a!2sDhanori%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-              className="absolute inset-0 w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700"
+              className="absolute inset-0 w-full h-full border-0 md:grayscale hover:grayscale-0 transition-all duration-700"
               loading="lazy"
               title="Restaurant Location"
             ></iframe>

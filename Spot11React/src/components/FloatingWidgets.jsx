@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, Users } from 'lucide-react';
+import { MessageCircle, Users, ArrowUp } from 'lucide-react';
 
 const FloatingWidgets = () => {
   const [showProof, setShowProof] = useState(false);
   const [proofText, setProofText] = useState("12 people visited today");
+  const [showGoTop, setShowGoTop] = useState(false);
 
   // Cycle social proof randomly
   useEffect(() => {
@@ -26,6 +27,19 @@ const FloatingWidgets = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Scroll listener for Go Top Button
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowGoTop(window.scrollY > 400);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
       {/* Social Proof Widget (Bottom Left) */}
@@ -43,6 +57,24 @@ const FloatingWidgets = () => {
             </div>
             <span className="text-sm font-medium tracking-wide">{proofText}</span>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Go to Top Button (Right Side, Above WhatsApp) */}
+      <AnimatePresence>
+        {showGoTop && (
+          <motion.button
+            onClick={scrollToTop}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="fixed bottom-40 md:bottom-28 right-4 z-40 w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-lg flex items-center justify-center text-white cursor-pointer hover:bg-brand-orange hover:border-transparent transition-all"
+            title="Go to top"
+          >
+            <ArrowUp size={20} />
+          </motion.button>
         )}
       </AnimatePresence>
 

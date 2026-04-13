@@ -16,17 +16,17 @@ const FinalCTA = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 text-brand-light leading-tight font-serif">
-          Good Food. Great Vibes. <br/>
-          <span className="italic text-brand-orange font-normal">Waiting for You.</span>
+          Your Table <br className="md:hidden" />
+          <span className="italic text-brand-orange font-normal">Is Waiting.</span>
         </h2>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 w-full sm:w-auto">
-          <button className="px-10 py-5 bg-brand-orange hover:bg-brand-brown text-white text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300 shadow-soft">
+          <button className="px-10 py-5 bg-brand-orange hover:bg-brand-brown focus:ring focus:ring-brand-orange/50 active:bg-brand-brown active:scale-95 text-white text-sm font-bold uppercase tracking-widest rounded-sm transition-all shadow-soft w-full sm:w-auto">
             Book Your Spot Now
           </button>
-          <button className="px-10 py-5 bg-white/10 backdrop-blur border border-white/30 hover:border-white hover:bg-white text-white hover:text-brand-dark text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300">
-            See What You'll Love
-          </button>
+          <a href="tel:+919876543210" className="flex items-center justify-center px-10 py-5 bg-white/10 backdrop-blur border border-white/30 hover:border-white hover:bg-white text-white hover:text-brand-dark active:bg-brand-light active:scale-95 active:text-brand-dark text-sm font-bold uppercase tracking-widest rounded-sm transition-all w-full sm:w-auto">
+            Call Now
+          </a>
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ const VideoReel = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
-    <section ref={containerRef} className="relative h-[80vh] min-h-[500px] overflow-hidden bg-brand-dark flex items-center justify-center">
+    <section ref={containerRef} className="relative h-[250px] md:h-[80vh] md:min-h-[500px] overflow-hidden bg-brand-dark flex items-center justify-center">
       
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <video 
@@ -20,6 +20,8 @@ const VideoReel = () => {
           loop 
           muted 
           playsInline
+          loading="lazy"
+          poster="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80"
           className="w-full h-full object-cover opacity-60"
         >
           {/* Using a generic high quality pexels/unsplash restaurant b-roll proxy */}

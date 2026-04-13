@@ -3,7 +3,7 @@ import { Star, Users, MapPin } from 'lucide-react';
 
 const TrustStrip = () => {
   return (
-    <div className="bg-brand-brown/10 border-b border-brand-orange/20 py-2 sm:py-3 overflow-hidden">
+    <div className="bg-brand-brown/10 border-b border-brand-orange/20 py-4 sm:py-5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-2 flex flex-wrap justify-center sm:justify-between items-center gap-x-6 gap-y-2 text-[10px] sm:text-sm font-bold text-brand-dark tracking-tight">
         
         <div className="flex items-center gap-1 sm:gap-2">

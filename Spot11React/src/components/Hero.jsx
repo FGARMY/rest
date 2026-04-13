@@ -4,24 +4,24 @@ import heroBg from '../assets/Dineimage.avif';
 
 const Hero = () => {
   return (
-    <section className="relative h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-brand-dark">
+    <section className="relative min-h-[100svh] pt-28 pb-20 md:py-0 md:min-h-screen flex items-center justify-center overflow-hidden bg-brand-dark">
       
       {/* Background Image */}
       <motion.div 
         initial={{ scale: 1.1, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2 }}
-        className="absolute inset-0 z-0"
+        className="absolute inset-x-0 inset-y-0 z-0 h-full w-full"
       >
         <img 
           src={heroBg} 
           alt="Spot11 Enjoy Premium Ambiance" 
           className="w-full h-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent flex"></div>
       </motion.div>
 
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center justify-center min-h-full">
         
         {/* Trust Line */}
         <motion.div 
@@ -39,9 +39,9 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+          className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8"
         >
-          Where Great Food <br className="hidden sm:block"/>
+          Where Great Food <br className="md:hidden" />
           <span className="italic text-brand-cream">Meets Great Vibes</span>
         </motion.h1>
 
@@ -74,13 +74,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-auto sm:mt-0 pb-12 sm:pb-0"
+          className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto mt-6"
         >
           <button className="px-8 py-5 sm:py-4 bg-brand-orange hover:bg-brand-brown active:bg-brand-brown text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95 shadow-2xl relative overflow-hidden group">
             <span className="relative z-10 block">Book Table in 2 Clicks</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] animate-[shimmer_2s_infinite]"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-[150%] animate-[shimmer_2s_infinite]"></div>
           </button>
-          <button className="px-8 py-5 sm:py-4 bg-white/10 backdrop-blur-sm border border-white hover:bg-white active:bg-white hover:text-brand-dark active:text-brand-dark text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95">
+          <button className="px-8 py-5 sm:py-4 bg-white/10 backdrop-blur-sm border border-white hover:bg-white active:bg-white hover:text-brand-dark active:text-brand-dark text-white text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95">
             Call for Instant Confirmation
           </button>
         </motion.div>

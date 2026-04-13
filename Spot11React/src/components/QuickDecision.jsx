@@ -9,13 +9,13 @@ const QuickDecision = () => {
   ];
 
   return (
-    <section className="pt-12 pb-6 bg-white outline-none">
+    <section className="pt-16 pb-10 sm:py-20 bg-white outline-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-xl font-bold text-brand-dark mb-6 tracking-tight">
+        <h3 className="text-xl sm:text-2xl font-bold text-brand-dark mb-8 tracking-tight">
           What are you in the mood for?
         </h3>
         
-        <div className="flex overflow-x-auto hide-scrollbar gap-4 pb-4 snap-x snap-mandatory">
+        <div className="flex overflow-x-auto hide-scrollbar gap-6 pb-6 snap-x snap-mandatory">
           {cards.map((card, idx) => (
             <motion.div 
               key={idx}

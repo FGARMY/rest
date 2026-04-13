@@ -1,31 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, Users, ArrowUp } from 'lucide-react';
+import { MessageCircle, ArrowUp } from 'lucide-react';
 
 const FloatingWidgets = () => {
-  const [showProof, setShowProof] = useState(false);
-  const [proofText, setProofText] = useState("12 people visited today");
   const [showGoTop, setShowGoTop] = useState(false);
-
-  // Cycle social proof randomly
-  useEffect(() => {
-    const proofs = [
-      "12 people visited today",
-      "5 tables booked recently",
-      "Someone just reserved a table",
-      "Live music starting tonight"
-    ];
-
-    const interval = setInterval(() => {
-      setShowProof(true);
-      setProofText(proofs[Math.floor(Math.random() * proofs.length)]);
-      
-      // Hide after 5 seconds
-      setTimeout(() => setShowProof(false), 5000);
-    }, 15000); // Trigger every 15 seconds
-
-    return () => clearInterval(interval);
-  }, []);
 
   // Scroll listener for Go Top Button
   useEffect(() => {
@@ -42,23 +20,6 @@ const FloatingWidgets = () => {
 
   return (
     <>
-      {/* Social Proof Widget (Bottom Left) */}
-      <AnimatePresence>
-        {showProof && (
-          <motion.div
-            initial={{ opacity: 0, x: -50, y: 20 }}
-            animate={{ opacity: 1, x: 0, y: 0 }}
-            exit={{ opacity: 0, x: -50, y: 20 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-            className="fixed bottom-24 md:bottom-8 left-4 z-40 bg-brand-dark text-white px-4 py-3 rounded-lg shadow-2xl flex items-center gap-3 border border-brand-orange/20"
-          >
-            <div className="w-8 h-8 rounded-full bg-brand-orange/20 flex items-center justify-center text-brand-orange">
-              <Users size={16} />
-            </div>
-            <span className="text-sm font-medium tracking-wide">{proofText}</span>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Go to Top Button (Right Side, Above WhatsApp) */}
       <AnimatePresence>
@@ -70,7 +31,7 @@ const FloatingWidgets = () => {
             exit={{ opacity: 0, scale: 0 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="fixed bottom-40 md:bottom-28 right-4 z-40 w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-lg flex items-center justify-center text-white cursor-pointer hover:bg-brand-orange hover:border-transparent transition-all"
+            className="fixed bottom-40 md:bottom-28 right-4 z-40 w-12 h-12 bg-brand-dark border border-brand-orange/50 rounded-full shadow-2xl flex items-center justify-center text-white cursor-pointer hover:bg-brand-orange transition-all"
             title="Go to top"
           >
             <ArrowUp size={20} />

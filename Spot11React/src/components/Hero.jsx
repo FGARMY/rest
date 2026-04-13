@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import heroBg from '../assets/Dineimage.avif';
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
         className="absolute inset-0 z-0"
       >
         <img 
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" 
+          src={heroBg} 
           alt="Spot11 Enjoy Premium Ambiance" 
           className="w-full h-full object-cover opacity-50"
         />

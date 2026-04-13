@@ -39,22 +39,20 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4"
+          className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] mb-6"
         >
-          Where Great Food <br className="md:hidden" />
-          Elevated Flavors, <br className="md:hidden" />
-          <span className="italic text-brand-cream">Unforgettable Moments</span>
+          Elevated Flavors. <br />
+          <span className="italic text-brand-orange font-normal">Unforgettable Moments.</span>
         </motion.h1>
 
-        {/* Subheadline */}
+        {/* Subheadline - Replaced Paragraph with simplified line */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-brand-light/90 text-lg md:text-xl font-light mb-4 max-w-2xl"
+          className="text-brand-light/70 text-base md:text-lg font-light tracking-widest uppercase mb-10"
         >
-          Where culinary artistry meets a vibrant atmosphere. <br />
-          Crafting memories, one plate at a time.
+          Pune's Favorite Evening Getaway
         </motion.p>
 
         {/* Urgency Trigger */}
@@ -72,25 +70,16 @@ const Hero = () => {
 
         {/* CTAs - Hidden on mobile to avoid duplicating Sticky Nav */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="hidden md:flex flex-col sm:flex-row gap-5 w-full sm:w-auto mt-6"
-        >
-          <button className="px-8 py-5 sm:py-4 bg-brand-orange hover:bg-brand-brown active:bg-brand-brown text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95 shadow-2xl relative overflow-hidden group">
-            <span className="relative z-10 block">Book Table</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-[150%] animate-[shimmer_2s_infinite]"></div>
-          </button>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="mt-12 mb-24 text-white/60 text-sm font-light tracking-[0.2em] uppercase"
-        >
-          Dhanori’s Favorite Neighborhood Escape
-        </motion.div>
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+           className="hidden md:flex flex-col sm:flex-row gap-5 w-full sm:w-auto mt-6"
+         >
+           <button className="px-8 py-5 sm:py-4 bg-brand-orange hover:bg-brand-brown active:bg-brand-brown text-white text-base sm:text-sm font-bold uppercase tracking-wider rounded-sm transition-all duration-300 w-full sm:w-auto active:scale-95 shadow-2xl relative overflow-hidden group">
+             <span className="relative z-10 block">Book Table</span>
+             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-[150%] animate-[shimmer_2s_infinite]"></div>
+           </button>
+         </motion.div>
 
         {/* Scroll Indicator */}
         <motion.div

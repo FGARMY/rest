@@ -2,7 +2,7 @@ import React from 'react';
 
 const FinalCTA = () => {
   return (
-    <section className="py-20 md:py-32 relative text-center overflow-hidden">
+    <section className="py-10 md:py-16 relative text-center overflow-hidden">
       
       {/* Background Image Setup */}
       <div className="absolute inset-0 z-0">

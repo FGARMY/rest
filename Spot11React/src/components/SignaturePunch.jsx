@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const SignaturePunch = () => {
   return (
-    <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden">
+    <section className="relative py-10 md:py-16 flex items-center justify-center overflow-hidden">
       
       <div className="absolute inset-0 z-0 bg-brand-dark">
         <img 

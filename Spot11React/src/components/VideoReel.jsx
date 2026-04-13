@@ -4,7 +4,7 @@ import { Heart, MessageCircle, Send, Bookmark, Music } from 'lucide-react';
 
 const VideoReel = () => {
   return (
-    <section className="py-8 md:py-16 bg-[#FFFCF6] flex flex-col items-center justify-center">
+    <section className="py-10 md:py-16 bg-[#FFFCF6] flex flex-col items-center justify-center">
       
       <div className="text-center max-w-xl mx-auto mb-10 md:mb-12 px-4">
         <h4 className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-2">Watch it Live</h4>

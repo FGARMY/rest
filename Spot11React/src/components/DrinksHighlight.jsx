@@ -4,7 +4,7 @@ import { BAR_ITEMS } from '../data/mockData';
 
 const DrinksHighlight = () => {
   return (
-    <section className="py-24 bg-brand-dark text-brand-light">
+    <section className="py-12 md:py-24 bg-brand-dark text-brand-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="flex flex-col mb-16 border-b border-white/10 pb-8 text-center max-w-3xl mx-auto">

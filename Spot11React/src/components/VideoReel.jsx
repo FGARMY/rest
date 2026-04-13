@@ -13,7 +13,7 @@ const VideoReel = () => {
         </h2>
       </div>
 
-      <div className="relative w-full max-w-6xl mx-auto flex items-center justify-center h-[350px] sm:h-[550px] md:h-[650px] overflow-hidden lg:overflow-visible">
+      <div className="relative w-full max-w-6xl mx-auto flex items-center justify-center h-[520px] sm:h-[550px] md:h-[650px] overflow-hidden lg:overflow-visible">
         
         {/* Previous Reel Skeleton (Left) - Hidden on mobile for focus */}
         <div className="hidden sm:flex absolute -left-[40%] md:left-2 lg:left-[10%] w-[320px] md:w-[360px] aspect-[9/16] rounded-[2rem] opacity-40 sm:opacity-60 blur-[1px] scale-95 origin-right transition-all flex-col justify-end p-2 border-2 border-brand-orange/20 z-0">
@@ -47,7 +47,7 @@ const VideoReel = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative z-10 w-[90%] max-w-[340px] md:max-w-[380px] aspect-[9/16] rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-4 border-white bg-black group"
+          className="relative z-10 w-[80%] max-w-[260px] md:max-w-[380px] aspect-[9/16] rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-[6px] border-white bg-black group"
         >
           <video 
             autoPlay 

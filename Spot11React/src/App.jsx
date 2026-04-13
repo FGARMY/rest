@@ -1,14 +1,19 @@
 import React from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
+import SignatureDish from './components/SignatureDish';
 import FoodExperience from './components/FoodExperience';
 import WhyChooseUs from './components/WhyChooseUs';
+import Occasions from './components/Occasions';
+import VideoReel from './components/VideoReel';
+import DrinksHighlight from './components/DrinksHighlight';
 import AmbianceGallery from './components/AmbianceGallery';
 import Reviews from './components/Reviews';
 import LocationContact from './components/LocationContact';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import StickyMobileNav from './components/StickyMobileNav';
+import FloatingWidgets from './components/FloatingWidgets';
 
 function App() {
   return (
@@ -35,16 +40,21 @@ function App() {
       <main>
         <Hero />
         <About />
+        <SignatureDish />
         <FoodExperience />
         <WhyChooseUs />
-        <AmbianceGallery />
+        <Occasions />
+        <VideoReel />
+        <DrinksHighlight />
         <Reviews />
+        <AmbianceGallery />
         <LocationContact />
         <FinalCTA />
       </main>
 
       <Footer />
       <StickyMobileNav />
+      <FloatingWidgets />
     </div>
   );
 }

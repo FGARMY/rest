@@ -7,7 +7,7 @@ const StickyMobileNav = () => {
         Call Now
       </button>
       <button className="flex-1 py-4 text-center bg-brand-orange hover:bg-brand-brown text-white text-xs font-semibold tracking-widest uppercase transition-colors">
-        Reserve Table
+        Book Table
       </button>
     </div>
   );

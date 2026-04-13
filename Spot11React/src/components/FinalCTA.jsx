@@ -2,23 +2,30 @@ import React from 'react';
 
 const FinalCTA = () => {
   return (
-    <section className="py-32 bg-brand-dark text-center relative overflow-hidden">
+    <section className="py-32 relative text-center overflow-hidden">
       
-      {/* Subtle Background Pattern / Gradient */}
-      <div className="absolute inset-0 bg-brand-orange/5 mix-blend-color-dodge pointer-events-none"></div>
+      {/* Background Image Setup */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80" 
+          alt="Restaurant dining experience" 
+          className="w-full h-full object-cover grayscale opacity-40"
+        />
+        <div className="absolute inset-0 bg-brand-dark/90"></div>
+      </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-brand-light leading-tight">
+        <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 text-brand-light leading-tight font-serif">
           Good Food. Great Vibes. <br/>
-          <span className="italic text-brand-orange font-normal">All Waiting for You.</span>
+          <span className="italic text-brand-orange font-normal">Waiting for You.</span>
         </h2>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 w-full sm:w-auto">
-          <button className="px-10 py-4 bg-brand-orange hover:bg-brand-brown text-white text-sm font-semibold uppercase tracking-widest rounded transition-all duration-300">
-            Reserve Table
+          <button className="px-10 py-5 bg-brand-orange hover:bg-brand-brown text-white text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300 shadow-soft">
+            Book Your Spot Now
           </button>
-          <button className="px-10 py-4 bg-transparent border border-white/30 hover:border-white hover:bg-white/5 text-white text-sm font-semibold uppercase tracking-widest rounded transition-all duration-300">
-            View Menu
+          <button className="px-10 py-5 bg-white/10 backdrop-blur border border-white/30 hover:border-white hover:bg-white text-white hover:text-brand-dark text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300">
+            See What You'll Love
           </button>
         </div>
       </div>

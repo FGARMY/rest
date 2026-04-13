@@ -56,11 +56,11 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
         >
-          <button className="px-8 py-4 bg-brand-orange hover:bg-brand-brown text-white text-sm font-semibold uppercase tracking-wider rounded transition-all duration-300 w-full sm:w-auto">
-            Reserve Table
+          <button className="px-8 py-4 bg-brand-orange hover:bg-brand-brown text-white text-sm font-semibold uppercase tracking-wider rounded transition-all duration-300 w-full sm:w-auto shadow-soft hover:shadow-lg">
+            Book Your Spot Now
           </button>
           <button className="px-8 py-4 bg-transparent border border-white hover:bg-white hover:text-brand-dark text-white text-sm font-semibold uppercase tracking-wider rounded transition-all duration-300 w-full sm:w-auto">
-            View Menu
+            See What You'll Love
           </button>
         </motion.div>
 

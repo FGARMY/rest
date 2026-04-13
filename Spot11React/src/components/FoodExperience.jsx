@@ -4,11 +4,11 @@ import { FOOD_EXPERIENCE } from '../data/mockData';
 
 const FoodExperience = () => {
   return (
-    <section id="food" className="py-16 md:py-32 bg-[#FDFBF7]">
+    <section id="food" className="py-12 md:py-16 bg-[#FDFBF7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 gap-5 md:gap-8">
           <div className="max-w-2xl">
             <motion.h4 
               initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ const FoodExperience = () => {
         </div>
 
         {/* Menu Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {FOOD_EXPERIENCE.map((dish, idx) => (
             <motion.div 
               key={dish.id} 
@@ -56,7 +56,7 @@ const FoodExperience = () => {
               transition={{ duration: 0.8, delay: idx * 0.15 }}
               className="group cursor-pointer flex flex-col"
             >
-              <div className="overflow-hidden mb-6 aspect-[4/5] bg-gray-200 relative shadow-sm">
+              <div className="overflow-hidden mb-3 md:mb-5 aspect-[4/5] bg-gray-200 relative shadow-sm">
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-700 z-10 pointer-events-none"></div>
                 <img 
                   src={dish.img} 

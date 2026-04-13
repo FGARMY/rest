@@ -4,16 +4,16 @@ import { BAR_ITEMS } from '../data/mockData';
 
 const DrinksHighlight = () => {
   return (
-    <section className="py-12 md:py-24 bg-brand-dark text-brand-light">
+    <section className="py-12 md:py-16 bg-brand-dark text-brand-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex flex-col mb-16 border-b border-white/10 pb-8 text-center max-w-3xl mx-auto">
+        <div className="flex flex-col mb-12 border-b border-white/10 pb-8 text-center max-w-3xl mx-auto">
           <motion.h4 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-3"
+            className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-2"
           >
             The Bar
           </motion.h4>
@@ -22,7 +22,7 @@ const DrinksHighlight = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight"
+            className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight"
           >
             This is where the night starts 🍻
           </motion.h2>
@@ -37,7 +37,7 @@ const DrinksHighlight = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
           {BAR_ITEMS.map((item, idx) => (
             <motion.div 
               key={item.id}

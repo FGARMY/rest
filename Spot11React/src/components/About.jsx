@@ -2,18 +2,18 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-12 md:py-24 bg-brand-light">
+    <section id="about" className="py-12 md:py-16 bg-brand-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-10">
           
           {/* Left Text */}
           <div className="w-full lg:w-1/2">
-            <h4 className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-3">Our Story</h4>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-brand-dark leading-tight">
+            <h4 className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-2">Our Story</h4>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-brand-dark leading-tight">
               Not Just a Restaurant — <br/>
               <span className="italic text-brand-brown font-normal">Your Go-To Spot.</span>
             </h2>
-            <div className="space-y-6 text-gray-600 font-light text-lg leading-relaxed">
+            <div className="space-y-4 text-gray-600 font-light text-lg leading-relaxed">
               <p>
                 Spot11 Enjoy was created with a simple vision: to offer a space where comfort meets culinary excellence. Whether you're here for a family dinner, catching up with friends, or enjoying a quiet evening at the bar, our ambience is designed to make you feel right at home.
               </p>

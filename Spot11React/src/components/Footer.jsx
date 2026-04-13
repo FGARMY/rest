@@ -3,10 +3,10 @@ import { MapPin, Phone, Clock } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-[#0A0A0B] text-gray-400 py-16 border-t border-white/5 pb-24 md:pb-16">
+    <footer id="contact" className="bg-[#0A0A0B] text-gray-400 py-12 md:py-16 border-t border-white/5 pb-24 md:pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 lg:gap-12">
           
           {/* Brand & Contact Info */}
           <div className="md:col-span-5 flex flex-col gap-6">
@@ -35,7 +35,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="md:col-span-3">
-            <h4 className="text-white font-bold tracking-widest text-xs uppercase mb-6">Quick Links</h4>
+            <h4 className="text-white font-bold tracking-widest text-[10px] uppercase mb-4">Quick Links</h4>
             <div className="flex flex-col gap-4 font-light text-sm">
               <a href="#about" className="hover:text-brand-orange transition-colors">Our Story</a>
               <a href="#food" className="hover:text-brand-orange transition-colors">The Menu</a>
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-light">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-light">
           <p>&copy; {new Date().getFullYear()} Spot11 Enjoy. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-brand-orange transition-colors">Facebook</a>

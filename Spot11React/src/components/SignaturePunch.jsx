@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const SignaturePunch = () => {
   return (
-    <section className="relative py-12 md:py-24 flex items-center justify-center overflow-hidden">
+    <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden">
       
       <div className="absolute inset-0 z-0 bg-brand-dark">
         <img 
@@ -20,7 +20,7 @@ const SignaturePunch = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-6xl font-bold font-serif text-white leading-tight mb-8"
+          className="text-4xl md:text-6xl font-bold font-serif text-white leading-tight mb-6"
         >
           Your Weekend Spot <br/> <span className="text-brand-orange italic">Sorted 🍽️🍻</span>
         </motion.h2>

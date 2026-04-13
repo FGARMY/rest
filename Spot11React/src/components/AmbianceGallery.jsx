@@ -3,7 +3,7 @@ import { GALLERY_IMAGES } from '../data/mockData';
 
 const AmbianceGallery = () => {
   return (
-    <section id="ambiance" className="py-12 md:py-24 bg-brand-light">
+    <section id="ambiance" className="py-12 md:py-16 bg-brand-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -13,7 +13,7 @@ const AmbianceGallery = () => {
           </h2>
         </div>
 
-        <div className="columns-2 lg:columns-3 gap-3 md:gap-6 space-y-3 md:space-y-6">
+        <div className="columns-2 lg:columns-3 gap-4 md:gap-5 space-y-4 md:space-y-5">
           {GALLERY_IMAGES.map((img, idx) => (
             <div key={idx} className="break-inside-avoid relative overflow-hidden group cursor-pointer rounded-sm">
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>

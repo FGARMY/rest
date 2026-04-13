@@ -4,15 +4,15 @@ import { REVIEWS } from '../data/mockData';
 
 const Reviews = () => {
   return (
-    <section className="py-12 md:py-24 bg-gray-50">
+    <section className="py-12 md:py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div className="max-w-xl">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-brand-dark">
+            <h2 className="text-4xl md:text-5xl font-bold mb-2 text-brand-dark">
               Google <span className="font-normal text-brand-brown">Reviews</span>
             </h2>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <span className="text-3xl font-bold text-gray-900">4.8</span>
               <div className="flex text-[#FBBC04]">
                 {[...Array(5)].map((_, i) => (
@@ -27,7 +27,7 @@ const Reviews = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {REVIEWS.map((review) => (
             <div key={review.id} className="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
               <div className="flex items-center gap-4 mb-4">

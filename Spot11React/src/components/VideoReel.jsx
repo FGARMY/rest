@@ -4,10 +4,10 @@ import { Heart, MessageCircle, Send, Bookmark, Music } from 'lucide-react';
 
 const VideoReel = () => {
   return (
-    <section className="py-24 bg-[#FFFCF6] flex flex-col items-center justify-center">
+    <section className="py-12 md:py-16 bg-[#FFFCF6] flex flex-col items-center justify-center">
       
       <div className="text-center max-w-xl mx-auto mb-12 px-4">
-        <h4 className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-3">Watch it Live</h4>
+        <h4 className="text-brand-orange uppercase tracking-widest text-sm font-semibold mb-2">Watch it Live</h4>
         <h2 className="text-4xl md:text-5xl font-bold text-brand-dark">
           Experience <span className="italic font-normal text-brand-brown">the Vibe</span>
         </h2>
@@ -65,7 +65,7 @@ const VideoReel = () => {
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none"></div>
 
           {/* Reels Sidebar Actions */}
-          <div className="absolute right-4 bottom-24 flex flex-col items-center gap-6 z-20">
+          <div className="absolute right-4 bottom-24 flex flex-col items-center gap-5 z-20">
             <button className="flex flex-col items-center gap-1 group/btn">
               <div className="w-10 h-10 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white group-hover/btn:text-red-500 transition-colors shadow-lg">
                 <Heart size={24} />
@@ -90,7 +90,7 @@ const VideoReel = () => {
 
           {/* Info Area */}
           <div className="absolute left-4 bottom-6 right-16 z-20">
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center gap-2 mb-2">
               <div className="w-8 h-8 rounded-full border border-white/50 bg-brand-orange flex items-center justify-center text-white font-bold text-xs shadow-md">
                 S11
               </div>

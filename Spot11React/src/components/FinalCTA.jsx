@@ -2,7 +2,7 @@ import React from 'react';
 
 const FinalCTA = () => {
   return (
-    <section className="py-32 relative text-center overflow-hidden">
+    <section className="py-20 md:py-32 relative text-center overflow-hidden">
       
       {/* Background Image Setup */}
       <div className="absolute inset-0 z-0">
@@ -15,7 +15,7 @@ const FinalCTA = () => {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 text-brand-light leading-tight font-serif">
+        <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 text-brand-light leading-tight font-serif">
           Good Food. Great Vibes. <br className="md:hidden" />
           <span className="italic text-brand-orange font-normal">Waiting for You.</span>
         </h2>

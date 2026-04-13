@@ -28,7 +28,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs uppercase tracking-[0.2em] mb-6"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs uppercase tracking-[0.2em] mb-4"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-brand-orange"></span>
           Family-Friendly Dining & Bar
@@ -39,7 +39,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8"
+          className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4"
         >
           Where Great Food <br className="md:hidden" />
           <span className="italic text-brand-cream">Meets Great Vibes</span>
@@ -50,7 +50,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-brand-light/90 text-lg md:text-xl font-light mb-8 max-w-2xl"
+          className="text-brand-light/90 text-lg md:text-xl font-light mb-4 max-w-2xl"
         >
           A premium dining and bar experience in Dhanori, Pune.<br/>
           Where great food meets exceptional vibes.
@@ -90,7 +90,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="mt-16 text-white/60 text-sm font-light italic"
+          className="mt-12 text-white/60 text-sm font-light italic"
         >
           Loved by locals in Pune
         </motion.div>

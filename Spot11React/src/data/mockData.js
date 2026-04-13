@@ -31,3 +31,9 @@ export const OCCASIONS = [
   { id: 2, title: "Best for Weekend Chill 🍻", desc: "Great music, cold drinks, and good friends.", img: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80" },
   { id: 3, title: "Casual Date Spot ❤️", desc: "Intimate lighting and exceptional hospitality.", img: "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=800&q=80" }
 ];
+export const USPS = [
+  { id: 1, title: "Comfortable Ambience", desc: "Designed with warm lighting, cozy seating, and a relaxing vibe.", icon: "Sparkles" },
+  { id: 2, title: "Family-Friendly Space", desc: "A welcoming environment with dedicated seating for large groups.", icon: "Users" },
+  { id: 3, title: "Quality Ingredients", desc: "We source only premium, fresh ingredients for authentic flavors.", icon: "Flame" },
+  { id: 4, title: "Warm Service", desc: "Attentive, personalized hospitality that makes you feel at home.", icon: "Heart" }
+];

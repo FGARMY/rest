@@ -113,6 +113,20 @@ const VideoReel = () => {
         </motion.div>
       </div>
 
+      {/* Directional Cue */}
+      <div className="mt-12 text-center">
+            <div className="inline-flex flex-col items-center gap-2">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-brand-dark/40">Next: Experience Spot11</span>
+                <motion.span 
+                    animate={{ y: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                    className="text-brand-orange text-lg"
+                >
+                    👇
+                </motion.span>
+            </div>
+        </div>
+
     </section>
   );
 };

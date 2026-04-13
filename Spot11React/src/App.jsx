@@ -4,8 +4,8 @@ import TrustStrip from './components/TrustStrip';
 
 
 import About from './components/About';
-import SignatureDish from './components/SignatureDish';
-import CategoryStrip from './components/CategoryStrip';
+
+
 import FoodExperience from './components/FoodExperience';
 
 
@@ -42,14 +42,14 @@ function App() {
         </div>
       </nav>
 
-      <main className="pb-24 md:pb-0">
+      <main className="pb-32 md:pb-0">
         <Hero />
         <TrustStrip />
 
         <VideoReel />
-        <CategoryStrip />
+
         <FoodExperience />
-        <SignatureDish />
+
         <AmbianceGallery />
 
         <DrinksHighlight />

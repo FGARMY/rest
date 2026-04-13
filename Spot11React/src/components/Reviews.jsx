@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import { REVIEWS } from '../data/mockData';
 
@@ -53,6 +54,20 @@ const Reviews = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Directional Cue */}
+        <div className="mt-16 text-center">
+            <div className="inline-flex flex-col items-center gap-2">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-brand-dark/40">Next: Our Story</span>
+                <motion.span 
+                    animate={{ y: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                    className="text-brand-orange text-lg"
+                >
+                    👇
+                </motion.span>
+            </div>
         </div>
 
       </div>

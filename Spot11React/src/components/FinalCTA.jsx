@@ -20,12 +20,9 @@ const FinalCTA = () => {
           <span className="italic text-brand-orange font-normal">Waiting for You.</span>
         </h2>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 w-full sm:w-auto">
-          <button className="px-10 py-5 bg-brand-orange hover:bg-brand-brown focus:ring focus:ring-brand-orange/50 active:bg-brand-brown active:scale-95 text-white text-sm font-bold uppercase tracking-widest rounded-sm transition-all shadow-soft w-full sm:w-auto">
-            Book Your Spot Now
-          </button>
-          <a href="tel:+919876543210" className="flex items-center justify-center px-10 py-5 bg-white/10 backdrop-blur border border-white/30 hover:border-white hover:bg-white text-white hover:text-brand-dark active:bg-brand-light active:scale-95 active:text-brand-dark text-sm font-bold uppercase tracking-widest rounded-sm transition-all w-full sm:w-auto">
-            Call Now
+        <div className="flex justify-center mt-12 w-full sm:w-auto">
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-brand-orange hover:bg-brand-brown active:bg-brand-brown active:scale-95 text-white text-sm font-bold uppercase tracking-widest rounded-sm transition-all shadow-[0_0_40px_rgba(217,119,6,0.3)] w-full sm:w-auto flex items-center justify-center gap-3">
+            <span className="text-xl">💬</span> CONNECT ON WHATSAPP
           </a>
         </div>
       </div>
